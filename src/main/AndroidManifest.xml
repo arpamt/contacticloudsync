@@ -9,7 +9,7 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.granita.contacticloudsync"
-    android:versionCode="30" android:versionName="Contacts"
+    android:versionCode="31" android:versionName="Contacts"
     android:installLocation="internalOnly">
 
     <uses-sdk
@@ -115,6 +115,10 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.granita.contacticloudsync.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.granita.contacticloudsync.About"
+            android:label="@string/about_title" >
         </activity>
         <!--Custom end-->
     </application>

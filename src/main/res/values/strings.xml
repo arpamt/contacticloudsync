@@ -11,7 +11,8 @@
 
     <string name="davdroid_website">Sync for iCloud Web site</string>
     <string name="title_activity_internet_browser">iCloud Internet Browser</string>
-
+    <string name="about_title">About</string>
+    <string name="about_message"></string>
 
     <string name="icloud_tasks">iCloud Tasks</string>
     <string name="HIDE_AD_BOOLEAN">HIDE_AD_BOOLEAN</string>
