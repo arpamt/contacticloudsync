@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2013 – 2015 Ricki Hirner (bitfire web engineering).
+  ~ All rights reserved. This program and the accompanying materials
+  ~ are made available under the terms of the GNU Public License v3.0
+  ~ which accompanies this distribution, and is available at
+  ~ http://www.gnu.org/licenses/gpl.html
+  -->
+
+<resources>
+
+    <!-- common strings -->
+    <string name="app_name">Sync for iCloud Contacts</string>
+
+    <string name="davdroid_website">Lloc web de iCloud</string>
+    <string name="next">Següent</string>
+    <string name="help">Ajuda</string>
+
+    <string name="exception_http">Error HTTP: %s</string>
+    <string name="exception_incapable_resource">Falten capacitats: %s</string>
+    <string name="exception_io">Error E/S: %s</string>
+    <string name="exception_uri_syntax">URI invàlida: %s</string>
+
+    <!-- MainActivity -->
+    <string name="main_manage_accounts">Gestioneu els comptes a sincronitzar</string>
+
+
+    <!-- AddAccountActivity -->
+    <string name="login_type_email">Entra amb una adreça de correu electrònic</string>
+    <string name="login_type_email_description">Els detalls del servei es detectaran automàticament amb el nom del servidor. Per exemple: elmeucompte@icloud.com</string>
+    <string name="login_type_url">Entra amb una URL i un nom d\'usuari</string>
+    <string name="login_type_url_description">Els detalls del servei es detectaran de forma automàtica amb al URL inicial i el nom d\'usuari. Normalment utilitzat per servers allotjats en servidors propis.</string>
+
+    <string name="login_email_description">Si us plau, introduïu la vostra adreça de correu electrònic. El seu nom de domini s\'utiltizara per auto-detectar la configuració dels serveis.</string>
+    <string name="login_email_address">Correu electrònic:</string>
+    <string-array name="login_url_scheme">
+        <item>http://</item>
+        <item>https://</item>
+    </string-array>
+
+    <string name="login_http_warning">"Si no feu servir cap encriptació (HTTPS), altres usuaris poden interceptar fàcilment les vostres credencials, contactes i events."</string>
+    <string name="login_user_name">Nom d\'usuari:</string>
+    <string name="login_base_url">URL Arrel (les coleccions es detecten automàticament):</string>
+    <string name="login_auth_preemptive">Autentificació preferent (recomanat però incompatible amb l\'autentificació Digest)</string>
+    <string name="login_password">Contrasenya:</string>
+    <string name="setup_select_collections">iCloud: Seleccioneu col·leccions</string>
+    <string name="setup_neither_caldav_nor_carddav">Ni iCloud estan disponibles a aquesta ubicació.</string>
+
+    <string name="setup_add_account">Afegir compte</string>
+    <string name="setup_querying_server">Contactant servidor. Espereu sisuplau.</string>
+    <string name="setup_what_to_sync">Quines col·leccions s\'han de sincronitzar?</string>
+    <string name="setup_address_books">Llibretes de contactes</string>
+    <string name="setup_calendars">Calendaris</string>
+    <string name="setup_select_address_book">Seleccioneu com a molt una llibreta de contactes (Polseu de nou per deseleccionar):</string>
+    <string name="setup_select_calendars">Seleccioneu els vostres calendaris:</string>
+
+    <string name="setup_account_details">Detalls del compte</string>
+    <string name="setup_account_name">Nom del compte:</string>
+    <string name="setup_account_name_hint">El meu compte iCloud</string>
+    <string name="setup_email_address">Correu electrònic:</string>
+    <string name="setup_organizer_hint">"ORGANITZADOR dels teus events. Es requereix si feu servir la informació dels assitents"</string>
+    <string name="setup_account_name_info">"Podeu fer servir la vostra addreça de correu electrònic com a nom de la compta ja que el Android utiltizar el nom de la compta com a camp ORGANITZADOR pels events que vosaltres creeu. No podeu tenir dos comptes amb el mateix nom.</string>
+    <string name="setup_read_only">només-lectura</string>
+
+</resources>

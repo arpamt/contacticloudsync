@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/gradient_background_main">
+
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_above="@+id/fragment2">
+
+    <LinearLayout
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- A CardView that contains a TextView -->
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="60dp"
+            android:text="@string/add_account"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border"
+            android:onClick="onClickAddCalendar"
+            android:layout_gravity="center"
+            android:id="@+id/button"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Add you iCloud account to sync calendars and tasks. If you have 2 factor authentication enabled, please create an app specific password."
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#eeeeee"
+            android:visibility="gone" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="@string/edit_account"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border"
+            android:layout_margin="30dp"
+            android:onClick="onClickModifyCalendar"
+            android:layout_gravity="center"
+            android:id="@+id/button2" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="@string/remove_ads"
+            android:textColor="#ffffff"
+            android:background="@drawable/button_border"
+            android:layout_margin="30dp"
+            android:onClick="onClickRemoveAds"
+            android:layout_gravity="center"
+            android:id="@+id/button3" />
+
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:id="@+id/card_view7"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            card_view:cardCornerRadius="4dp"
+            android:onClick="onClickTasks"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/TasksButton"
+                android:background="@drawable/logo_2"
+                android:layout_margin="10dp"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/icloud_tasks"
+                android:id="@+id/textView7"
+                android:autoText="false"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="100dp"
+                android:paddingRight="20dp"
+                android:typeface="normal"
+                android:textSize="16dp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:id="@+id/card_view3"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            card_view:cardCornerRadius="4dp"
+            android:onClick="onClickContacts"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ContactsButton"
+                android:background="@drawable/logo_2"
+                android:layout_margin="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/icloud_contacts"
+                android:id="@+id/textView4"
+                android:autoText="false"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="100dp"
+                android:paddingRight="20dp"
+                android:typeface="normal"
+                android:textSize="16dp" />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:id="@+id/card_view4"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            card_view:cardCornerRadius="4dp"
+            android:onClick="onClickMail"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/iCloudMailButton"
+                android:background="@drawable/logo_3"
+                android:layout_margin="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/icloud_mail"
+                android:id="@+id/textView5"
+                android:autoText="false"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="100dp"
+                android:paddingRight="20dp"
+                android:typeface="normal"
+                android:textSize="16dp" />
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:padding="5dp"
+            android:id="@+id/card_view5"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            card_view:cardCornerRadius="4dp"
+            android:onClick="onClickTapItFast"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/TapItFastButton"
+                android:background="@drawable/tapitfast"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/tap_it_fast"
+                android:id="@+id/textView6"
+                android:autoText="false"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="100dp"
+                android:paddingRight="20dp"
+                android:typeface="normal"
+                android:textSize="16dp" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>
+
+<fragment
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:name="com.granita.contacticloudsync.Ads.AdFragment"
+    android:id="@+id/fragment2"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="0dp"
+    android:layout_marginTop="0dp" />
+</RelativeLayout>
