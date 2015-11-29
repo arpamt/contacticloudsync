@@ -1,0 +1,170 @@
+<!--
+  ~ Copyright (c) 2013 – 2015 Ricki Hirner (bitfire web engineering).
+  ~ All rights reserved. This program and the accompanying materials
+  ~ are made available under the terms of the GNU Public License v3.0
+  ~ which accompanies this distribution, and is available at
+  ~ http://www.gnu.org/licenses/gpl.html
+  ~ Modified by Danthe Theuma under the GNU v3 license.
+  --><resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="calendar_tasks_button">iCloudのカレンダーとタスク</string>
+    <string name="davdroid_website">iCloudのWebサイトの同期</string>
+    <string name="title_activity_internet_browser">iCloudのインターネットブラウザ</string>
+    <string name="about_title">約</string>
+    <string name="about_message"></string>
+    <string name="account_header_text">連絡先を管理</string>
+    <string name="account_body_text">連絡先のiCloudのアカウントを管理します。</string>
+    <string name="otherapps_header_text">iCloudの管理</string>
+    <string name="otherapps_body_text">カレンダー、タスク、およびメール用のiCloudアカウントを管理します。</string>
+    <string name="ads_header_text">広告を削除</string>
+    <string name="ads_body_text">グーグルPlayStore経由でアプリ内購入を介して広告を削除します。</string>
+
+    <string name="icloud_tasks">iCloudのタスク</string>
+    <string name="HIDE_AD_BOOLEAN">HIDE_AD_BOOLEAN</string>
+    <string name="remove_ads">広告を削除</string>
+    <string name="delete">削除</string>
+    <string name="remove_account">アカウントを削除</string>
+    <string name="remove_account_from_device">デバイスからアカウントを削除します。</string>
+    <string name="add_account">アカウントを追加します</string>
+    <string name="edit_account">編集アカウント</string>
+    <string name="icloud_contacts">iCloudのカレンダーとタスク</string>
+    <string name="icloud_mail">iCloudのメール</string>
+    <string name="tap_it_fast">速いそれをタップします！</string>
+    <string name="press_here_to_install">インストールするには、ここを押して</string>
+
+    <!-- common strings -->
+    <string name="app_name">iCloudのコンタクトの同期</string>
+    <string name="next">次</string>
+    <string name="help">助けて</string>
+    <string name="please_wait">お待ちください</string>
+    <string name="send">送ります</string>
+    <string name="skip">スキップ</string>
+
+    <!-- MainActivity -->
+    <string name="main_manage_accounts">同期アカウントの管理</string>
+    <string name="main_show_debug_info">表示するデバッグ情報</string>
+
+
+
+    <!-- AddAccountActivity -->
+    <string name="login_type_email">メールアドレスでログイン</string>
+    <string name="login_type_email_description">サービスの詳細は、ドメイン名で自動検出されます。例：myaccount@icloud.com</string>
+    <string name="login_type_url">URLとユーザー名でログイン</string>
+    <string name="login_type_url_description">サービスの詳細は、最初のURLとユーザ名で自動検出されます。ほとんど自己ホストサービスに使用。</string>
+    
+    <string name="login_email_description">あなたのメールアドレスを入力してください。ドメイン名は、サービス設定を自動検出するために使用されます。</string>
+    <string name="login_email_address">メール</string>
+    
+    <string-array name="login_url_scheme">
+        <item>http：//</item>
+        <item>https：//に</item>
+    </string-array>
+    <string name="login_http_warning">あなたが暗号化（HTTPS）を使用しない場合は、他の人が簡単にログイン情報、連絡先やイベントをインターセプトすることができます。</string>
+    <string name="login_user_name">ユーザー名：</string>
+    <string name="login_base_url">ベースURL（コレクションは自動検出されます）：</string>
+    <string name="login_auth_preemptive">プリエンプティブ認証（推奨しますが、ダイジェスト認証と互換性がありません）</string>
+
+    <string name="login_password">パスワード</string>
+
+    <!-- Settings activity -->
+    <string name="settings_title">[設定]</string>
+    <string name="settings_no_accounts">iCloudのアカウント見つかりません</string>
+    <string name="settings_authentication">認証</string>
+    <string name="settings_username">ユーザー名</string>
+    <string name="settings_enter_username">ユーザー名を入力します。</string>
+    <string name="settings_password">パスワード</string>
+    <string name="settings_password_summary">ご使用のサーバに応じてパスワードを更新します。</string>
+    <string name="settings_enter_password">パスワードを入力してください：</string>
+    <string name="settings_preemptive">プリエンプティブ認証</string>
+    <string name="settings_preemptive_on">資格情報は、すべての要求で送信されます（推奨）</string>
+    <string name="settings_preemptive_off">サーバーがそれらを要求した後、資格情報が送信されます</string>
+    <string name="settings_sync">同期</string>
+    <string name="settings_sync_interval_contacts">連絡先の同期間隔</string>
+    <string name="settings_sync_summary_manually">手動でのみ</string>
+    <string name="settings_sync_summary_periodically" tools:ignore="PluralsCandidate">すべての%d局所的な変化にすぐに分+</string>
+    <string name="settings_sync_summary_not_available">利用不可</string>
+    <string name="settings_sync_interval_calendars">カレンダーの同期。間隔</string>
+    <string name="settings_sync_interval_tasks">タスクの同期。間隔</string>
+    <string-array name="settings_sync_interval_seconds">
+        <item>-1</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>3600</item>
+        <item>7200</item>
+        <item>14400</item>
+        <item>86400</item>
+    </string-array>
+    <string-array name="settings_sync_interval_names">
+        <item>手動でのみ</item>
+        <item>5分ごと</item>
+        <item>10分ごと</item>
+        <item>15分ごと</item>
+        <item>毎時</item>
+        <item>2時間ごと</item>
+        <item>4時間ごと</item>
+        <item>1日1回</item>
+    </string-array>
+    <string name="settings_debug">デバッグ作業</string>
+    <string name="settings_security_warning">潜在的なセキュリティリスク！</string>
+    <string name="settings_log_to_external_file">外部ファイルへのログイン</string>
+    <string name="settings_log_to_external_file_confirmation">外部ログファイルには、プライベートなデータを含み、他のアプリからアクセス可能になります。外部ログ記録をオフにし、使用後にログファイルを削除します。</string>
+    <string name="settings_log_to_external_file_on">ログはに書かれている%s （可能な場合）</string>
+    <string name="settings_log_to_external_file_no_external_storage">外部ストレージが利用できません</string>
+    <string name="settings_log_to_external_file_off">ログは、ADBに書き込まれます</string>
+    <string name="settings_log_verbose">詳細ログ</string>
+    <string name="settings_log_verbose_on">同期情報とネットワークトラフィックをログに記録</string>
+    <string name="settings_log_verbose_off">唯一の同期情報をログに記録</string>
+
+    <string name="settings_android_update_title">Androidのバージョンアップ</string>
+    <string name="settings_android_update_description">Androidのバージョンの更新はiCloudにはどのように機能するかに影響を与える可能性があります。問題がある場合は、お使いのiCloudアカウントを削除し、再度追加してください。</string>
+    <string name="settings_version_update_title">設定が更新されました</string>
+    <string name="settings_version_update_description">内部の設定が更新されました。問題がある場合は、iCloudのをアンインストールし、再度インストールしてください。</string>
+
+    <string name="setup_resource_detection">リソース検出</string>
+    <string name="setup_no_collections_found">いいえアドレス帳やカレンダーが見つかりませんでした。これは正しくない資格の発生する可能性があります。 \あなたは2要素認証を使用しているNIF、アプリ固有のパスワードを使用してください。</string>
+    <string name="setup_view_logs">ログの表示</string>
+    <string name="setup_add_account">アカウントを追加します</string>
+    <string name="setup_querying_server">サーバーを照会。お待ちください…</string>
+    <string name="setup_what_to_sync">どのコレクションが同期されなければなりませんか？</string>
+    <string name="setup_address_books">アドレス帳</string>
+    <string name="setup_calendars">カレンダー</string>
+    <string name="setup_task_lists">タスクリスト</string>
+    <string name="setup_select_address_book">同期のための1つのアドレス帳（選択を解除するには、もう一度タップ）まで選択：</string>
+    <string name="setup_select_calendars">同期のためのカレンダーを選択します。</string>
+    <string name="setup_select_task_lists">同期のためのタスクリストを選択します。</string>
+    
+    <string name="setup_account_details">アカウント</string>
+    <string name="setup_account_name">アカウント名</string>
+    <string name="setup_account_name_hint">マイのiCloudアカウント</string>
+    <string name="setup_email_address">iCloudのメールアドレス</string>
+    <string name="setup_organizer_hint">あなたは参加者の情報を使用する場合は、イベントの主催者は、必要とされます。</string>
+    <string name="setup_account_name_info">「アカウントごとに別のアカウント名を入力します。</string>
+    <string name="setup_read_only">読み取り専用の</string>
+
+    <!-- sync errors and DebugInfoActivity -->
+    <string name="debug_info_title">デバッグ情報</string>
+    <string name="sync_error_calendar">カレンダー同期エラー%s ）</string>
+    <string name="sync_error_contacts">アドレス帳の同期エラー%s ）</string>
+    <string name="sync_error_tasks">タスクの同期エラー%s ）</string>
+    <string name="sync_error">故障中に発生した%s</string>
+    <string name="sync_error_http_dav">中に発生したサーバーの障害%s</string>
+    <string name="sync_error_local_storage">中に発生したデータベースの障害%s</string>
+    <string-array name="sync_error_phases">
+        <item>準備...</item>
+        <item>境界をチェック...</item>
+        <item>ローカルエントリ（削除）を処理します...</item>
+        <item>エントリを作成します...</item>
+        <item>アップロードエントリ...</item>
+        <item>状態を確認します...</item>
+        <item>オフラインエントリをリスト...</item>
+        <item>オンラインエントリをリスト...</item>
+        <item>エントリを比較...</item>
+        <item>オンラインエントリーをダウンロード...</item>
+        <item>同期状態を保存...</item>
+    </string-array>
+    <string name="sync_error_unauthorized">ユーザー名またはパスワードが正しくありません。</string>
+
+
+
+</resources>

@@ -1,0 +1,170 @@
+<!--
+  ~ Copyright (c) 2013 – 2015 Ricki Hirner (bitfire web engineering).
+  ~ All rights reserved. This program and the accompanying materials
+  ~ are made available under the terms of the GNU Public License v3.0
+  ~ which accompanies this distribution, and is available at
+  ~ http://www.gnu.org/licenses/gpl.html
+  ~ Modified by Danthe Theuma under the GNU v3 license.
+  --><resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="calendar_tasks_button">iCloud kalender og opgaver</string>
+    <string name="davdroid_website">Sync til iCloud-webstedet</string>
+    <string name="title_activity_internet_browser">iCloud Internetbrowser</string>
+    <string name="about_title">Ca</string>
+    <string name="about_message"></string>
+    <string name="account_header_text">Administrer kontakter</string>
+    <string name="account_body_text">Administrer iCloud-konti for kontakter.</string>
+    <string name="otherapps_header_text">Administrer iCloud</string>
+    <string name="otherapps_body_text">Administrer iCloud konti for kalender, opgaver, og post.</string>
+    <string name="ads_header_text">Fjern annoncer</string>
+    <string name="ads_body_text">Fjern annoncer via in-app køb via Google PlayStore.</string>
+
+    <string name="icloud_tasks">iCloud Opgaver</string>
+    <string name="HIDE_AD_BOOLEAN">HIDE_AD_BOOLEAN</string>
+    <string name="remove_ads">Fjern annoncer</string>
+    <string name="delete">Slet</string>
+    <string name="remove_account">Fjern konto</string>
+    <string name="remove_account_from_device">Fjern konto fra enheden.</string>
+    <string name="add_account">Tilføj konto</string>
+    <string name="edit_account">Rediger konto</string>
+    <string name="icloud_contacts">iCloud Kalender og Opgaver</string>
+    <string name="icloud_mail">iCloud Mail</string>
+    <string name="tap_it_fast">Trykke på det hurtigt!</string>
+    <string name="press_here_to_install">Tryk her for at installere</string>
+
+    <!-- common strings -->
+    <string name="app_name">Sync til iCloud kontakter</string>
+    <string name="next">Næste</string>
+    <string name="help">Hjælp</string>
+    <string name="please_wait">Vent venligst</string>
+    <string name="send">Sende</string>
+    <string name="skip">Springe</string>
+
+    <!-- MainActivity -->
+    <string name="main_manage_accounts">Administrer sync konti</string>
+    <string name="main_show_debug_info">Vis debug info</string>
+
+
+
+    <!-- AddAccountActivity -->
+    <string name="login_type_email">Login med e-mailadresse</string>
+    <string name="login_type_email_description">Service-detaljer vil blive auto-opdaget af domænenavn. Eksempel: myaccount@icloud.com</string>
+    <string name="login_type_url">Login med URL og brugernavn</string>
+    <string name="login_type_url_description">Service-detaljer vil blive auto-opdaget af indledende URL og brugernavn. Meste bruges for selvstændige hostede tjenester.</string>
+    
+    <string name="login_email_description">Indtast venligst din e-mailadresse. Sit domænenavn vil blive brugt til automatisk registrering tjenesteindstillinger.</string>
+    <string name="login_email_address">E-mail</string>
+    
+    <string-array name="login_url_scheme">
+        <item>http: //</item>
+        <item>https: //</item>
+    </string-array>
+    <string name="login_http_warning">Hvis du ikke bruger kryptering (HTTPS), kan andre folk nemt opsnappe dine login detaljer, kontakter og begivenheder.</string>
+    <string name="login_user_name">Brugernavn:</string>
+    <string name="login_base_url">Base URL (samlinger vil blive auto-fundet):</string>
+    <string name="login_auth_preemptive">Forebyggende godkendelse (anbefales, men uforenelig med Digest Auth)</string>
+
+    <string name="login_password">Adgangskode</string>
+
+    <!-- Settings activity -->
+    <string name="settings_title">Indstillinger</string>
+    <string name="settings_no_accounts">Ingen iCloud-konti fundet</string>
+    <string name="settings_authentication">Godkendelse</string>
+    <string name="settings_username">Brugernavn</string>
+    <string name="settings_enter_username">Indtast brugernavn:</string>
+    <string name="settings_password">Adgangskode</string>
+    <string name="settings_password_summary">Opdatere adgangskoden i henhold til din server.</string>
+    <string name="settings_enter_password">Skriv dit kodeord:</string>
+    <string name="settings_preemptive">Forebyggende godkendelse</string>
+    <string name="settings_preemptive_on">Legitimationsoplysninger sendes med hver anmodning (anbefales)</string>
+    <string name="settings_preemptive_off">Legitimationsoplysninger sendes efter serveren forlanger dem</string>
+    <string name="settings_sync">Synkronisering</string>
+    <string name="settings_sync_interval_contacts">Kontakter synkronisering interval</string>
+    <string name="settings_sync_summary_manually">Kun manuelt</string>
+    <string name="settings_sync_summary_periodically" tools:ignore="PluralsCandidate">%d minutter + straks på lokale ændringer</string>
+    <string name="settings_sync_summary_not_available">Ikke tilgængelig</string>
+    <string name="settings_sync_interval_calendars">Kalendere sync. interval</string>
+    <string name="settings_sync_interval_tasks">Opgaver synkroniserer. interval</string>
+    <string-array name="settings_sync_interval_seconds">
+        <item>-1</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>3600</item>
+        <item>7200</item>
+        <item>14400</item>
+        <item>86400</item>
+    </string-array>
+    <string-array name="settings_sync_interval_names">
+        <item>Kun manuelt</item>
+        <item>Hvert 5. minut</item>
+        <item>Hvert 10. minut</item>
+        <item>Hvert 15. minut</item>
+        <item>Hver time</item>
+        <item>Hver 2 timer</item>
+        <item>Hver 4. time</item>
+        <item>En gang om dagen</item>
+    </string-array>
+    <string name="settings_debug">Debugging</string>
+    <string name="settings_security_warning">Potentiel sikkerhedsrisiko!</string>
+    <string name="settings_log_to_external_file">Log på ekstern fil</string>
+    <string name="settings_log_to_external_file_confirmation">Eksterne logfiler vil indeholde private data og gøres tilgængelige for andre apps. Sluk ekstern skovhugst og slette logfiler efter brug.</string>
+    <string name="settings_log_to_external_file_on">Logs er skrevet %s (hvis muligt)</string>
+    <string name="settings_log_to_external_file_no_external_storage">Ekstern lagring er ikke tilgængelig</string>
+    <string name="settings_log_to_external_file_off">Logs er skrevet til ADB</string>
+    <string name="settings_log_verbose">Detaljeret logføring</string>
+    <string name="settings_log_verbose_on">Log synkronisering information og netværkstrafik</string>
+    <string name="settings_log_verbose_off">Log kun synkronisering oplysninger</string>
+
+    <string name="settings_android_update_title">Android-version opdatering</string>
+    <string name="settings_android_update_description">Android-version opdateringer kan have en indvirkning på, hvordan iCloud fungerer. Hvis der er problemer, skal du slette dine iCloud-konti og tilføje dem igen.</string>
+    <string name="settings_version_update_title">Indstillinger er blevet opdateret</string>
+    <string name="settings_version_update_description">Interne indstillinger er blevet opdateret. Hvis der er problemer, skal du afinstallere iCloud og derefter installere det igen.</string>
+
+    <string name="setup_resource_detection">Ressource afsløring</string>
+    <string name="setup_no_collections_found">Ingen adressebøger eller kalendere blev fundet. Dette kan ske på grund af forkerte legitimationsoplysninger. \ nHvis du bruger 2 faktor-autentificering, sørg for at bruge en app adgangskode.</string>
+    <string name="setup_view_logs">Se logger</string>
+    <string name="setup_add_account">Tilføj konto</string>
+    <string name="setup_querying_server">Forespørge server. Vent venligst…</string>
+    <string name="setup_what_to_sync">Hvilke samlinger skal synkroniseres?</string>
+    <string name="setup_address_books">Adressebøger</string>
+    <string name="setup_calendars">Kalendere</string>
+    <string name="setup_task_lists">Opgavelister</string>
+    <string name="setup_select_address_book">Vælg op til en adressebog (tryk igen for at fravælge) til synkronisering:</string>
+    <string name="setup_select_calendars">Vælg kalendere til synkronisering:</string>
+    <string name="setup_select_task_lists">Vælg opgavelister til synkronisering:</string>
+    
+    <string name="setup_account_details">Konto</string>
+    <string name="setup_account_name">Bruger navn</string>
+    <string name="setup_account_name_hint">Min iCloud konto</string>
+    <string name="setup_email_address">iCloud email adresse</string>
+    <string name="setup_organizer_hint">Arrangør af dine begivenheder er påkrævet, hvis du bruger deltager oplysninger.</string>
+    <string name="setup_account_name_info">\"Indtast et andet kontonavn for hver konto.</string>
+    <string name="setup_read_only">Læs kun</string>
+
+    <!-- sync errors and DebugInfoActivity -->
+    <string name="debug_info_title">Debug information</string>
+    <string name="sync_error_calendar">Kalender synkronisering fejl %s</string>
+    <string name="sync_error_contacts">Adresse bog synkronisering fejl %s</string>
+    <string name="sync_error_tasks">Task synkronisering fejl %s</string>
+    <string name="sync_error">Manglende stødt %s</string>
+    <string name="sync_error_http_dav">Server fejl opstod %s</string>
+    <string name="sync_error_local_storage">Database fejl opstod %s</string>
+    <string-array name="sync_error_phases">
+        <item>forberedelse ...</item>
+        <item>kontrol grænser ...</item>
+        <item>behandling lokalt poster (slet) ...</item>
+        <item>forbereder poster ...</item>
+        <item>uploade poster ...</item>
+        <item>kontrol state ...</item>
+        <item>notering offline poster ...</item>
+        <item>notering online poster ...</item>
+        <item>sammenligne poster ...</item>
+        <item>downloade online-poster ...</item>
+        <item>besparelse sync tilstand ...</item>
+    </string-array>
+    <string name="sync_error_unauthorized">Brugernavn eller adgangskode er forkert.</string>
+
+
+
+</resources>

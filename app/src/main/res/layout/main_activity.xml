@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background_main">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:layout_above="@+id/fragment2">
+
+        <LinearLayout
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- A CardView that contains a TextView -->
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="60dp"
+                android:text="@string/add_account"
+                android:textColor="#ee1F1F21"
+                android:background="@drawable/button_border"
+                android:onClick="onClickAddCalendar"
+                android:layout_gravity="center"
+                android:id="@+id/button"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:typeface="sans"
+                android:textStyle="normal"
+                android:textSize="14dp" />
+
+
+
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="@string/edit_account"
+                android:textColor="#ee1F1F21"
+                android:background="@drawable/button_border"
+                android:onClick="onClickModifyCalendar"
+                android:layout_gravity="center"
+                android:id="@+id/button2"
+                android:typeface="sans"
+                android:textStyle="normal"
+                android:textSize="14dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/account_header_text"
+                android:id="@+id/account_header_text"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#8e8e93"
+                android:gravity="left"
+                android:typeface="normal"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/account_body_text"
+                android:id="@+id/account_body_text"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#8e8e93"
+                android:gravity="left"
+                android:typeface="normal"
+                android:textStyle="normal"
+                android:textSize="18dp" />
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="60dp"
+                android:text="@string/calendar_tasks_button"
+                android:textColor="#ee1F1F21"
+                android:background="@drawable/button_border"
+                android:onClick="onClickContacts"
+                android:id="@+id/addcalendarbutton"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:typeface="sans"
+                android:textStyle="normal"
+                android:textSize="14dp"
+                android:layout_gravity="center" />
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="@string/icloud_mail"
+                android:textColor="#ee1F1F21"
+                android:background="@drawable/button_border"
+                android:onClick="onClickMail"
+                android:layout_gravity="center"
+                android:id="@+id/button_icloudmail"
+                android:typeface="sans"
+                android:textStyle="normal"
+                android:textSize="14dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="@string/tap_it_fast"
+                android:textColor="#ee1F1F21"
+                android:background="@drawable/button_border"
+                android:onClick="onClickTapItFast"
+                android:layout_gravity="center"
+                android:id="@+id/button_tapitfast"
+                android:typeface="sans"
+                android:textStyle="normal"
+                android:textSize="14dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/otherapps_header_text"
+                android:id="@+id/otherapps_header_text"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#8e8e93"
+                android:gravity="left"
+                android:typeface="normal"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/otherapps_body_text"
+                android:id="@+id/otherapps_body_text"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#8e8e93"
+                android:gravity="left"
+                android:typeface="normal"
+                android:textStyle="normal"
+                android:textSize="18dp" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:text="@string/remove_ads"
+                android:textColor="#ee1F1F21"
+                android:background="@drawable/button_border"
+                android:layout_margin="30dp"
+                android:onClick="onClickRemoveAds"
+                android:layout_gravity="center"
+                android:id="@+id/button3"
+                android:typeface="sans"
+                android:textStyle="normal"
+                android:textSize="14dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/ads_header_text"
+                android:id="@+id/removeads_header_text"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="#8e8e93"
+                android:gravity="left"
+                android:typeface="normal"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/ads_body_text"
+                android:id="@+id/removeads_body_text"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#8e8e93"
+                android:gravity="left"
+                android:typeface="normal"
+                android:textStyle="normal"
+                android:textSize="18dp" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:name="com.granita.contacticloudsync.Ads.AdFragment"
+        android:id="@+id/fragment2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp" />
+</RelativeLayout>

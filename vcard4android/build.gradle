@@ -1,0 +1,49 @@
+/*
+ * Copyright © 2013 – 2015 Ricki Hirner (bitfire web engineering).
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v3.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/gpl.html
+ */
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 23
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        disable 'AllowBackup'
+        disable 'InvalidPackage'
+    }
+    packagingOptions {
+        exclude 'LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+    compile 'org.apache.commons:commons-lang3:3.4'
+    provided 'org.projectlombok:lombok:1.16.6'
+    compile 'org.slf4j:slf4j-android:1.7.12'
+
+    // ez-vcard to parse/generate VCards
+    compile('com.googlecode.ez-vcard:ez-vcard:0.9.6') {
+        // hCard functionality not needed
+        exclude group: 'org.jsoup', module: 'jsoup'
+        exclude group: 'org.freemarker', module: 'freemarker'
+        // jCard functionality not needed
+        exclude group: 'com.fasterxml.jackson.core', module: 'jackson-core'
+    }
+}

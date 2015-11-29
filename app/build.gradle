@@ -1,0 +1,75 @@
+/*
+ * Copyright (c) 2013 – 2015 Ricki Hirner (bitfire web engineering).
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the GNU Public License v3.0
+ * which accompanies this distribution, and is available at
+ * http://www.gnu.org/licenses/gpl.html
+ */
+
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        applicationId "com.granita.contacticloudsync"
+        minSdkVersion 14
+        targetSdkVersion 22
+
+        versionCode 85
+        versionName "0.9.1.1"
+
+        buildConfigField "java.util.Date", "buildTime", "new java.util.Date()"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    lintOptions {
+        disable 'IconColors'
+        disable 'IconLauncherShape'
+        disable 'IconMissingDensityFolder'
+        disable 'InconsistentLayout'
+        disable 'MergeRootFrame'
+        disable 'MissingTranslation'
+        disable 'OldTargetApi'
+        disable 'RtlEnabled'
+        disable 'Typos'
+    }
+    packagingOptions {
+        exclude 'LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+configurations.all {
+    exclude module: 'commons-logging'       // undocumented part of Android
+}
+
+dependencies {
+    compile 'dnsjava:dnsjava:2.1.7'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    provided 'org.projectlombok:lombok:1.16.6'
+    compile('org.slf4j:slf4j-android:1.7.12')
+
+    /*Custom start*/
+    compile 'com.google.android.gms:play-services:6.+'
+    compile 'com.android.support:cardview-v7:22.0.+'
+    /*Custom end*/
+
+    compile project(':dav4android')
+    compile project(':ical4android')
+    compile project(':vcard4android')
+
+    compile project(':MemorizingTrustManager')
+
+    androidTestCompile 'com.squareup.okhttp:mockwebserver:2.6.0'
+}

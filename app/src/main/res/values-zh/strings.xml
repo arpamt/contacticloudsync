@@ -1,0 +1,170 @@
+<!--
+  ~ Copyright (c) 2013 – 2015 Ricki Hirner (bitfire web engineering).
+  ~ All rights reserved. This program and the accompanying materials
+  ~ are made available under the terms of the GNU Public License v3.0
+  ~ which accompanies this distribution, and is available at
+  ~ http://www.gnu.org/licenses/gpl.html
+  ~ Modified by Danthe Theuma under the GNU v3 license.
+  --><resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="calendar_tasks_button">iCloud的日历和任务</string>
+    <string name="davdroid_website">同步进行的iCloud网站</string>
+    <string name="title_activity_internet_browser">iCloud的互联网浏览器</string>
+    <string name="about_title">关于</string>
+    <string name="about_message"></string>
+    <string name="account_header_text">管理联系人</string>
+    <string name="account_body_text">管理的iCloud账户的联系人。</string>
+    <string name="otherapps_header_text">管理的iCloud</string>
+    <string name="otherapps_body_text">管理的iCloud账户日历，任务，和邮件。</string>
+    <string name="ads_header_text">移除广告</string>
+    <string name="ads_body_text">通过在应用程序通过谷歌PlayStore购买删除广告。</string>
+
+    <string name="icloud_tasks">iCloud的任务</string>
+    <string name="HIDE_AD_BOOLEAN">HIDE_AD_BOOLEAN</string>
+    <string name="remove_ads">移除广告</string>
+    <string name="delete">删除</string>
+    <string name="remove_account">删除帐户</string>
+    <string name="remove_account_from_device">从设备中删除帐户。</string>
+    <string name="add_account">新增帐户</string>
+    <string name="edit_account">编辑帐户</string>
+    <string name="icloud_contacts">iCloud的日历和任务</string>
+    <string name="icloud_mail">iCloud的邮件</string>
+    <string name="tap_it_fast">点击它快！</string>
+    <string name="press_here_to_install">按这里安装</string>
+
+    <!-- common strings -->
+    <string name="app_name">同步进行的iCloud联系人</string>
+    <string name="next">下一个</string>
+    <string name="help">帮帮我</string>
+    <string name="please_wait">请稍候</string>
+    <string name="send">发送</string>
+    <string name="skip">跳跃</string>
+
+    <!-- MainActivity -->
+    <string name="main_manage_accounts">管理同步帐户</string>
+    <string name="main_show_debug_info">显示调试信息</string>
+
+
+
+    <!-- AddAccountActivity -->
+    <string name="login_type_email">与电子邮件地址登录</string>
+    <string name="login_type_email_description">服务信息将被自动检测到域名。示例：myaccount@icloud.com</string>
+    <string name="login_type_url">与网址和用户名登录</string>
+    <string name="login_type_url_description">服务信息将被自动检测到初始URL和用户名。大多用于自托管服务。</string>
+    
+    <string name="login_email_description">请输入您的电子邮件地址。它的域名将被用于自动检测服务设置。</string>
+    <string name="login_email_address">电子邮件</string>
+    
+    <string-array name="login_url_scheme">
+        <item>HTTP：//</item>
+        <item>https：//开头</item>
+    </string-array>
+    <string name="login_http_warning">如果你不使用加密（HTTPS），其他人可以很容易地拦截您的登录信息，通讯录和事件。</string>
+    <string name="login_user_name">用户名：</string>
+    <string name="login_base_url">基本URL（集合将自动检测）：</string>
+    <string name="login_auth_preemptive">抢先认证（推荐，但摘要身份验证不兼容）</string>
+
+    <string name="login_password">密码</string>
+
+    <!-- Settings activity -->
+    <string name="settings_title">设置</string>
+    <string name="settings_no_accounts">没有找到的iCloud账户</string>
+    <string name="settings_authentication">认证</string>
+    <string name="settings_username">用户名</string>
+    <string name="settings_enter_username">输入用户名：</string>
+    <string name="settings_password">密码</string>
+    <string name="settings_password_summary">根据您的服务器上更新密码。</string>
+    <string name="settings_enter_password">输入密码：</string>
+    <string name="settings_preemptive">先发制人认证</string>
+    <string name="settings_preemptive_on">凭据发送的每个请求（推荐）</string>
+    <string name="settings_preemptive_off">服务器请求它们之后凭据发送</string>
+    <string name="settings_sync">同步</string>
+    <string name="settings_sync_interval_contacts">联系人同步间隔</string>
+    <string name="settings_sync_summary_manually">只有手动</string>
+    <string name="settings_sync_summary_periodically" tools:ignore="PluralsCandidate">每%d分钟+立即在本地修改</string>
+    <string name="settings_sync_summary_not_available">无法使用</string>
+    <string name="settings_sync_interval_calendars">日历同步。间隔</string>
+    <string name="settings_sync_interval_tasks">任务同步。间隔</string>
+    <string-array name="settings_sync_interval_seconds">
+        <item>-1</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>3600</item>
+        <item>7200</item>
+        <item>14400</item>
+        <item>86400</item>
+    </string-array>
+    <string-array name="settings_sync_interval_names">
+        <item>只有手动</item>
+        <item>每5分钟</item>
+        <item>每10分钟</item>
+        <item>每15分钟</item>
+        <item>每隔一小时</item>
+        <item>每2小时</item>
+        <item>每4小时</item>
+        <item>一天一次</item>
+    </string-array>
+    <string name="settings_debug">调试</string>
+    <string name="settings_security_warning">潜在的安全隐患！</string>
+    <string name="settings_log_to_external_file">记录到外部文件</string>
+    <string name="settings_log_to_external_file_confirmation">外部的日志文件将包含私人数据被其他应用程序访问。关闭外部日志记录，并在使用后删除日志文件。</string>
+    <string name="settings_log_to_external_file_on">日志写入%s如果可能的话）</string>
+    <string name="settings_log_to_external_file_no_external_storage">外部存储不可用</string>
+    <string name="settings_log_to_external_file_off">日志写入亚行</string>
+    <string name="settings_log_verbose">详细日志记录</string>
+    <string name="settings_log_verbose_on">日志同步信息和网络流量</string>
+    <string name="settings_log_verbose_off">仅记录同步信息</string>
+
+    <string name="settings_android_update_title">Android的版本更新</string>
+    <string name="settings_android_update_description">Android版本的更新可能会在iCloud中的工作方式产生了影响。如果有问题，请删除您的iCloud帐户，并再次加入。</string>
+    <string name="settings_version_update_title">设置已更新</string>
+    <string name="settings_version_update_description">内部设置已更新。如果有问题，请卸载的iCloud，然后重新安装。</string>
+
+    <string name="setup_resource_detection">资源探测</string>
+    <string name="setup_no_collections_found">没有地址簿和日历被发现。这可能会发生，因为不正确的凭据的。 \ n如果您使用的是2因子认证，确保使用的应用程序特定的密码。</string>
+    <string name="setup_view_logs">查看日志</string>
+    <string name="setup_add_account">新增帐户</string>
+    <string name="setup_querying_server">查询服务器。请稍候…</string>
+    <string name="setup_what_to_sync">其中集合应同步？</string>
+    <string name="setup_address_books">地址簿</string>
+    <string name="setup_calendars">日历</string>
+    <string name="setup_task_lists">任务列表</string>
+    <string name="setup_select_address_book">选择了一个地址簿（再次点击取消选择）进行同步：</string>
+    <string name="setup_select_calendars">选择日历同步：</string>
+    <string name="setup_select_task_lists">选择同步的任务列表：</string>
+    
+    <string name="setup_account_details">帐户</string>
+    <string name="setup_account_name">用户名</string>
+    <string name="setup_account_name_hint">我的iCloud账户</string>
+    <string name="setup_email_address">iCloud的电子邮件地址</string>
+    <string name="setup_organizer_hint">如果你使用与会者信息您的活动组织者是必需的。</string>
+    <string name="setup_account_name_info">“为每个帐户输入一个不同的帐户名。</string>
+    <string name="setup_read_only">只读</string>
+
+    <!-- sync errors and DebugInfoActivity -->
+    <string name="debug_info_title">调试信息</string>
+    <string name="sync_error_calendar">日历同步错误%s</string>
+    <string name="sync_error_contacts">地址簿同步错误%s</string>
+    <string name="sync_error_tasks">任务同步错误%s</string>
+    <string name="sync_error">遇到失败，而%s</string>
+    <string name="sync_error_http_dav">服务器故障而遭遇%s</string>
+    <string name="sync_error_local_storage">数据库故障时遇到了%s</string>
+    <string-array name="sync_error_phases">
+        <item>准备...</item>
+        <item>检查边界...</item>
+        <item>处理本地条目（删除）...</item>
+        <item>准备条目...</item>
+        <item>上传作品...</item>
+        <item>检查状态...</item>
+        <item>上市脱机条目...</item>
+        <item>上市网上条目...</item>
+        <item>比较条目...</item>
+        <item>下载在线条目...</item>
+        <item>节能同步状态...</item>
+    </string-array>
+    <string name="sync_error_unauthorized">用户名或密码不正确。</string>
+
+
+
+</resources>

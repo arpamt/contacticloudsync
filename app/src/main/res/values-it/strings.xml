@@ -1,0 +1,170 @@
+<!--
+  ~ Copyright (c) 2013 – 2015 Ricki Hirner (bitfire web engineering).
+  ~ All rights reserved. This program and the accompanying materials
+  ~ are made available under the terms of the GNU Public License v3.0
+  ~ which accompanies this distribution, and is available at
+  ~ http://www.gnu.org/licenses/gpl.html
+  ~ Modified by Danthe Theuma under the GNU v3 license.
+  --><resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="calendar_tasks_button">iCloud calendario e attività</string>
+    <string name="davdroid_website">Sync per sito Web iCloud</string>
+    <string name="title_activity_internet_browser">iCloud Internet Browser</string>
+    <string name="about_title">Di</string>
+    <string name="about_message"></string>
+    <string name="account_header_text">Gestire i contatti</string>
+    <string name="account_body_text">Gestire gli account iCloud per i contatti.</string>
+    <string name="otherapps_header_text">Gestire iCloud</string>
+    <string name="otherapps_body_text">Gestire gli account iCloud per calendario, attività, e la posta.</string>
+    <string name="ads_header_text">Rimuovere gli annunci</string>
+    <string name="ads_body_text">Rimuovere gli annunci attraverso l\'acquisto in-app tramite Google PlayStore.</string>
+
+    <string name="icloud_tasks">Compiti iCloud</string>
+    <string name="HIDE_AD_BOOLEAN">HIDE_AD_BOOLEAN</string>
+    <string name="remove_ads">Rimuovere gli annunci</string>
+    <string name="delete">Cancellare</string>
+    <string name="remove_account">Rimuovi l\'account</string>
+    <string name="remove_account_from_device">Rimuovi account da dispositivo.</string>
+    <string name="add_account">Aggiungi account</string>
+    <string name="edit_account">Modifica account</string>
+    <string name="icloud_contacts">iCloud Calendario e Attività</string>
+    <string name="icloud_mail">iCloud posta</string>
+    <string name="tap_it_fast">Toccare in fretta!</string>
+    <string name="press_here_to_install">Premere qui per installarlo</string>
+
+    <!-- common strings -->
+    <string name="app_name">Sync per iCloud Contatti</string>
+    <string name="next">Il prossimo</string>
+    <string name="help">Aiuto</string>
+    <string name="please_wait">attendere prego</string>
+    <string name="send">Inviare</string>
+    <string name="skip">Saltare</string>
+
+    <!-- MainActivity -->
+    <string name="main_manage_accounts">Gestire gli account di sincronizzazione</string>
+    <string name="main_show_debug_info">Mostra informazioni di debug</string>
+
+
+
+    <!-- AddAccountActivity -->
+    <string name="login_type_email">Accesso con indirizzo e-mail</string>
+    <string name="login_type_email_description">I dettagli del servizio saranno rilevate automaticamente in base al nome di dominio. Esempio: myaccount@icloud.com</string>
+    <string name="login_type_url">Accesso con URL e il nome utente</string>
+    <string name="login_type_url_description">I dettagli del servizio saranno rilevate automaticamente da URL iniziale e nome utente. Per lo più utilizzata per i servizi self-hosted.</string>
+    
+    <string name="login_email_description">Inserisci il tuo indirizzo email. Il suo nome di dominio verrà utilizzato per rilevare automaticamente le impostazioni del servizio.</string>
+    <string name="login_email_address">E-mail</string>
+    
+    <string-array name="login_url_scheme">
+        <item>http: //</item>
+        <item>https: //</item>
+    </string-array>
+    <string name="login_http_warning">Se non si utilizza la crittografia (HTTPS), altre persone possono facilmente intercettare la password, i contatti e gli eventi.</string>
+    <string name="login_user_name">Nome utente:</string>
+    <string name="login_base_url">URL di base (collezioni saranno rilevate automaticamente):</string>
+    <string name="login_auth_preemptive">Autenticazione Preemptive (consigliato, ma incompatibile con Digest di autenticazione)</string>
+
+    <string name="login_password">Password</string>
+
+    <!-- Settings activity -->
+    <string name="settings_title">Impostazioni</string>
+    <string name="settings_no_accounts">Nessun account iCloud trovato</string>
+    <string name="settings_authentication">Autenticazione</string>
+    <string name="settings_username">Nome utente</string>
+    <string name="settings_enter_username">Inserire username:</string>
+    <string name="settings_password">Password</string>
+    <string name="settings_password_summary">Aggiornare la password in base al vostro server.</string>
+    <string name="settings_enter_password">Inserisci la tua password:</string>
+    <string name="settings_preemptive">Autenticazione pre-emptive</string>
+    <string name="settings_preemptive_on">Le credenziali vengono inviati con ogni richiesta (consigliato)</string>
+    <string name="settings_preemptive_off">Le credenziali vengono inviate dopo server li richiede</string>
+    <string name="settings_sync">Sincronizzazione</string>
+    <string name="settings_sync_interval_contacts">Intervallo di sincronizzazione Contatti</string>
+    <string name="settings_sync_summary_manually">Solo manualmente</string>
+    <string name="settings_sync_summary_periodically" tools:ignore="PluralsCandidate">%d minuti + immediatamente alle modifiche locali</string>
+    <string name="settings_sync_summary_not_available">Non disponibile</string>
+    <string name="settings_sync_interval_calendars">Calendari sincronizzazione. intervallo</string>
+    <string name="settings_sync_interval_tasks">Compiti sincronizzazione. intervallo</string>
+    <string-array name="settings_sync_interval_seconds">
+        <item>-1</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>3600</item>
+        <item>7200</item>
+        <item>14400</item>
+        <item>86400</item>
+    </string-array>
+    <string-array name="settings_sync_interval_names">
+        <item>Solo manualmente</item>
+        <item>Ogni 5 minuti</item>
+        <item>Ogni 10 minuti</item>
+        <item>Ogni 15 minuti</item>
+        <item>Ogni ora</item>
+        <item>Ogni 2 ore</item>
+        <item>Ogni 4 ore</item>
+        <item>Una volta al giorno</item>
+    </string-array>
+    <string name="settings_debug">Debug</string>
+    <string name="settings_security_warning">Potenziale rischio di sicurezza!</string>
+    <string name="settings_log_to_external_file">Accedere a file esterno</string>
+    <string name="settings_log_to_external_file_confirmation">File di log esterni conterranno dati privati ​​ed essere accessibili da altre applicazioni. Disattivare la registrazione esterna ed eliminare i file di registro dopo l\'uso.</string>
+    <string name="settings_log_to_external_file_on">I registri vengono scritti %s (se possibile)</string>
+    <string name="settings_log_to_external_file_no_external_storage">Storage esterno non è disponibile</string>
+    <string name="settings_log_to_external_file_off">I registri vengono scritti ADB</string>
+    <string name="settings_log_verbose">La registrazione dettagliata</string>
+    <string name="settings_log_verbose_on">Accedere informazioni di sincronizzazione e del traffico di rete</string>
+    <string name="settings_log_verbose_off">Log solo informazioni di sincronizzazione</string>
+
+    <string name="settings_android_update_title">Aggiornamento versione di Android</string>
+    <string name="settings_android_update_description">Aggiornamenti di versione di Android possono avere un impatto sul funzionamento di iCloud. Se ci sono problemi, si prega di eliminare gli account iCloud e aggiungere di nuovo.</string>
+    <string name="settings_version_update_title">Le impostazioni sono state aggiornate</string>
+    <string name="settings_version_update_description">Impostazioni interne sono state aggiornate. Se ci sono problemi, disinstallare iCloud e quindi installarlo nuovamente.</string>
+
+    <string name="setup_resource_detection">Rilevamento delle risorse</string>
+    <string name="setup_no_collections_found">Non sono stati trovati rubriche o calendari. Ciò può accadere a causa di credenziali errate. \ nSe si utilizza 2 fattori di autenticazione, assicurarsi di utilizzare una password specifica app.</string>
+    <string name="setup_view_logs">Visualizzare i registri</string>
+    <string name="setup_add_account">Aggiungi account</string>
+    <string name="setup_querying_server">Interrogazione del server. Attendere prego…</string>
+    <string name="setup_what_to_sync">Quali collezioni sarà sincronizzata?</string>
+    <string name="setup_address_books">Rubriche</string>
+    <string name="setup_calendars">Calendari</string>
+    <string name="setup_task_lists">Elenchi di attività</string>
+    <string name="setup_select_address_book">Seleziona fino a una rubrica (toccare di nuovo per deselezionare) per la sincronizzazione:</string>
+    <string name="setup_select_calendars">Selezionare i calendari per la sincronizzazione:</string>
+    <string name="setup_select_task_lists">Selezionare elenchi di attività per la sincronizzazione:</string>
+    
+    <string name="setup_account_details">Conto</string>
+    <string name="setup_account_name">Nome dell\'account</string>
+    <string name="setup_account_name_hint">Il mio account iCloud</string>
+    <string name="setup_email_address">iCloud indirizzo e-mail</string>
+    <string name="setup_organizer_hint">Organizzatore di eventi se si utilizzano informazioni partecipante è richiesto.</string>
+    <string name="setup_account_name_info">\"Inserire un nome account diverso per ogni account.</string>
+    <string name="setup_read_only">sola lettura</string>
+
+    <!-- sync errors and DebugInfoActivity -->
+    <string name="debug_info_title">Informazioni di debug</string>
+    <string name="sync_error_calendar">Errore di sincronizzazione del calendario %s</string>
+    <string name="sync_error_contacts">Indirizzo errore di sincronizzazione libro %s</string>
+    <string name="sync_error_tasks">Errore di sincronizzazione delle attività %s</string>
+    <string name="sync_error">Guasto rilevato %s</string>
+    <string name="sync_error_http_dav">Errore del server rilevato %s</string>
+    <string name="sync_error_local_storage">Errore di database rilevato %s</string>
+    <string-array name="sync_error_phases">
+        <item>la preparazione ...</item>
+        <item>controllo dei confini ...</item>
+        <item>elaborazione voci localmente (cancella) ...</item>
+        <item>preparare le voci ...</item>
+        <item>voci caricamento ...</item>
+        <item>la verifica dello stato ...</item>
+        <item>elenco voci non in linea ...</item>
+        <item>elenco voci online ...</item>
+        <item>confrontando le voci ...</item>
+        <item>il download di voci online ...</item>
+        <item>stato di risparmio di sincronizzazione ...</item>
+    </string-array>
+    <string name="sync_error_unauthorized">Nome utente o la password sono errati.</string>
+
+
+
+</resources>

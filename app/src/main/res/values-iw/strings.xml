@@ -1,0 +1,170 @@
+<!--
+  ~ Copyright (c) 2013 – 2015 Ricki Hirner (bitfire web engineering).
+  ~ All rights reserved. This program and the accompanying materials
+  ~ are made available under the terms of the GNU Public License v3.0
+  ~ which accompanies this distribution, and is available at
+  ~ http://www.gnu.org/licenses/gpl.html
+  ~ Modified by Danthe Theuma under the GNU v3 license.
+  --><resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="calendar_tasks_button">לוח השנה iCloud ומשימות</string>
+    <string name="davdroid_website">סנכרון לאתר אינטרנט של iCloud</string>
+    <string name="title_activity_internet_browser">דפדפן האינטרנט iCloud</string>
+    <string name="about_title">אוֹדוֹת</string>
+    <string name="about_message"></string>
+    <string name="account_header_text">ניהול אנשי קשר</string>
+    <string name="account_body_text">ניהול חשבונות iCloud עבור אנשי קשר.</string>
+    <string name="otherapps_header_text">ניהול iCloud</string>
+    <string name="otherapps_body_text">ניהול חשבונות iCloud ללוח שנה, משימות ודואר.</string>
+    <string name="ads_header_text">הסר פרסומות</string>
+    <string name="ads_body_text">להסיר את מודעות באמצעות רכישה בתוך האפליקציה באמצעות Google PlayStore.</string>
+
+    <string name="icloud_tasks">משימות iCloud</string>
+    <string name="HIDE_AD_BOOLEAN">HIDE_AD_BOOLEAN</string>
+    <string name="remove_ads">הסר פרסומות</string>
+    <string name="delete">לִמְחוֹק</string>
+    <string name="remove_account">הסר חשבון</string>
+    <string name="remove_account_from_device">הסר חשבון ממכשיר.</string>
+    <string name="add_account">להוסיף את חשבון</string>
+    <string name="edit_account">חשבון עריכה</string>
+    <string name="icloud_contacts">לוח השנה iCloud ומשימות</string>
+    <string name="icloud_mail">iCloud דואר</string>
+    <string name="tap_it_fast">הקש עליו מהר!</string>
+    <string name="press_here_to_install">לחץ כאן להתקנה</string>
+
+    <!-- common strings -->
+    <string name="app_name">סנכרון למגעי iCloud</string>
+    <string name="next">הַבָּא</string>
+    <string name="help">עֶזרָה</string>
+    <string name="please_wait">המתן בבקשה</string>
+    <string name="send">לִשְׁלוֹחַ</string>
+    <string name="skip">לְדַלֵג</string>
+
+    <!-- MainActivity -->
+    <string name="main_manage_accounts">ניהול חשבונות הסנכרון</string>
+    <string name="main_show_debug_info">מידע באגים הצג</string>
+
+
+
+    <!-- AddAccountActivity -->
+    <string name="login_type_email">כניסה עם כתובת דואר אלקטרוני</string>
+    <string name="login_type_email_description">פרטי שירות יהיו על ידי שם תחום זיהוי אוטומטי. לדוגמא: myaccount@icloud.com</string>
+    <string name="login_type_url">כניסה עם כתובת אתר ושם משתמש</string>
+    <string name="login_type_url_description">פרטי שירות יהיו על ידי כתובת אתר ראשונית ואת שם משתמש מזוהה באופן אוטומטי. משמש בעיקר לשירותים עצמיים מתארח.</string>
+    
+    <string name="login_email_description">נא להזין את כתובת הדוא\"ל שלך. שם תחום שלו ישמש לזיהוי אוטומטי של גדרות שירות.</string>
+    <string name="login_email_address">אֶלֶקטרוֹנִי</string>
+    
+    <string-array name="login_url_scheme">
+        <item>http: //</item>
+        <item>https: //</item>
+    </string-array>
+    <string name="login_http_warning">אם אתה לא משתמש בהצפנה (HTTPS), אנשים אחרים יכולים בקלות ליירט את פרטי התחברות, אנשי הקשר והאירועים שלך.</string>
+    <string name="login_user_name">שֵׁם מִשׁתַמֵשׁ:</string>
+    <string name="login_base_url">URL בסיס (אוספים יהיו זיהוי אוטומטי):</string>
+    <string name="login_auth_preemptive">אימות מקדימה (מומלץ, אך עולה בקנה אחד עם auth Digest)</string>
+
+    <string name="login_password">סִיסמָה</string>
+
+    <!-- Settings activity -->
+    <string name="settings_title">הגדרות</string>
+    <string name="settings_no_accounts">אין חשבונות iCloud מצאו</string>
+    <string name="settings_authentication">אימות</string>
+    <string name="settings_username">שֵׁם מִשׁתַמֵשׁ</string>
+    <string name="settings_enter_username">הזן את שם משתמש:</string>
+    <string name="settings_password">סִיסמָה</string>
+    <string name="settings_password_summary">לעדכן את הסיסמה לפי השרת שלך.</string>
+    <string name="settings_enter_password">הכנס את הסיסמה שלך:</string>
+    <string name="settings_preemptive">אימות מנע</string>
+    <string name="settings_preemptive_on">אישורי נשלחים עם כל בקשה (מומלץ)</string>
+    <string name="settings_preemptive_off">אישורי נשלחים לאחר השרת מבקש</string>
+    <string name="settings_sync">סִנכְּרוּן</string>
+    <string name="settings_sync_interval_contacts">מרווח סנכרון אנשי קשר</string>
+    <string name="settings_sync_summary_manually">רק באופן ידני</string>
+    <string name="settings_sync_summary_periodically" tools:ignore="PluralsCandidate">%d דקות + מייד על שינויים מקומיים</string>
+    <string name="settings_sync_summary_not_available">לא זמין</string>
+    <string name="settings_sync_interval_calendars">סנכרון לוחות שנה. הַפסָקָה</string>
+    <string name="settings_sync_interval_tasks">סינכרון משימות. הַפסָקָה</string>
+    <string-array name="settings_sync_interval_seconds">
+        <item>-1</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>3600</item>
+        <item>7200</item>
+        <item>14400</item>
+        <item>86400</item>
+    </string-array>
+    <string-array name="settings_sync_interval_names">
+        <item>רק באופן ידני</item>
+        <item>כל 5 דקות</item>
+        <item>כל 10 דקות</item>
+        <item>כל 15 דקות</item>
+        <item>בכל שעה</item>
+        <item>2 כל שעות</item>
+        <item>כל 4 שעות</item>
+        <item>פעם ביום</item>
+    </string-array>
+    <string name="settings_debug">Debugging</string>
+    <string name="settings_security_warning">סיכון אבטחה פוטנציאלי!</string>
+    <string name="settings_log_to_external_file">התחבר לקובץ חיצוני</string>
+    <string name="settings_log_to_external_file_confirmation">קבצי יומן חיצוניים יכילו נתונים פרטיים ויהיה נגיש על ידי יישומים אחרים. כבה את הרישום חיצוני ולמחוק את קבצי הלוג לאחר שימוש.</string>
+    <string name="settings_log_to_external_file_on">יומנים %s (אם אפשר)</string>
+    <string name="settings_log_to_external_file_no_external_storage">אחסון חיצוני אינו זמין</string>
+    <string name="settings_log_to_external_file_off">יומנים נכתבים ADB</string>
+    <string name="settings_log_verbose">רישום יומן מפורט</string>
+    <string name="settings_log_verbose_on">התחבר מידע סנכרון ותעבורת רשת</string>
+    <string name="settings_log_verbose_off">התחבר מידע סנכרון רק</string>
+
+    <string name="settings_android_update_title">עדכון גרסת אנדרואיד</string>
+    <string name="settings_android_update_description">ייתכן שיש לי עדכוני גרסת אנדרואיד השפעה על איך עובד iCloud. אם יש בעיות, בבקשה למחוק חשבונות iCloud שלך ולהוסיף אותם שוב.</string>
+    <string name="settings_version_update_title">הגדרות עודכנו</string>
+    <string name="settings_version_update_description">הגדרות פנימיות עודכנו. אם יש בעיות, בבקשה להסיר את iCloud ולאחר מכן להתקין אותו שוב.</string>
+
+    <string name="setup_resource_detection">איתור משאבים</string>
+    <string name="setup_no_collections_found">אין ספר כתובות או לוחות שנה נמצאו. זה יכול לקרות בגלל אישורי שגויים. \ N אם משתמש 2 אימות גורם, הקפד להשתמש בסיסמא ספציפית אפליקציה.</string>
+    <string name="setup_view_logs">צפה ביומנים</string>
+    <string name="setup_add_account">להוסיף את חשבון</string>
+    <string name="setup_querying_server">שאילתות שרת. המתן בבקשה…</string>
+    <string name="setup_what_to_sync">שאוספים יהיו מסונכרן?</string>
+    <string name="setup_address_books">ספרי כתובת</string>
+    <string name="setup_calendars">לוחות שנה</string>
+    <string name="setup_task_lists">רשימות משימות</string>
+    <string name="setup_select_address_book">בחר עד ספר אחד כתובת (הקש שוב כדי לבטל את הבחירה) לסנכרון:</string>
+    <string name="setup_select_calendars">בחר לוחות שנה לסנכרון:</string>
+    <string name="setup_select_task_lists">בחר רשימות משימות לסנכרון:</string>
+    
+    <string name="setup_account_details">חֶשְׁבּוֹן</string>
+    <string name="setup_account_name">שם החשבון</string>
+    <string name="setup_account_name_hint">חשבון iCloud שלי</string>
+    <string name="setup_email_address">כתובת הדוא\"ל של iCloud</string>
+    <string name="setup_organizer_hint">ארגונית של האירועים שלך נדרש אם אתה משתמש במידע משתתף.</string>
+    <string name="setup_account_name_info">\"הזן שם חשבון שונה עבור כל חשבון.</string>
+    <string name="setup_read_only">לקריאה בלבד</string>
+
+    <!-- sync errors and DebugInfoActivity -->
+    <string name="debug_info_title">מידע Debug</string>
+    <string name="sync_error_calendar">שגיאת סנכרון לוח שנה %s</string>
+    <string name="sync_error_contacts">שגיאת סנכרון פנקס כתובות %s</string>
+    <string name="sync_error_tasks">שגיאת סנכרון משימות %s</string>
+    <string name="sync_error">כישלון נתקל %s</string>
+    <string name="sync_error_http_dav">כישלון השרת נתקל %s</string>
+    <string name="sync_error_local_storage">כישלון מסד נתקל %s</string>
+    <string-array name="sync_error_phases">
+        <item>עֲרִיכָה...</item>
+        <item>בדיקת גבולות ...</item>
+        <item>עיבוד ערכים מקומי (למחוק) ...</item>
+        <item>הכנת ערכים ...</item>
+        <item>ערכי העלאה ...</item>
+        <item>בדיקת מצב ...</item>
+        <item>רישום ערכים מחובר ...</item>
+        <item>רישום ערכים באינטרנט ...</item>
+        <item>השוואת ערכים ...</item>
+        <item>הורדת ערכים מקוונים ...</item>
+        <item>מצב חיסכון בסנכרון ...</item>
+    </string-array>
+    <string name="sync_error_unauthorized">שם משתמש או סיסמא שגויה.</string>
+
+
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical">
+
+
+    <TextView
+        android:layout_gravity="start"
+        android:layout_marginBottom="20dp"
+        android:text="@string/setup_account_details"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_gravity="start"
+        android:text="@string/setup_account_name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/textView"
+        android:typeface="normal"
+        android:textStyle="normal"
+        android:textColor="#34aadc" />
+
+    <EditText
+        android:background="@drawable/field_border"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:id="@+id/account_name"
+        android:layout_gravity="fill_horizontal"
+        android:hint="@string/setup_account_name_hint"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:typeface="normal"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="normal"
+        android:textColor="#8e8e93"
+        android:textColorHint="#BDBEC2">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/account_name_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:drawableLeft="@drawable/extra_actions_about"
+        android:drawableStart="@drawable/extra_actions_about"
+        android:drawablePadding="10dp"
+        android:padding="10dp"
+        android:text="@string/setup_account_name_info"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone"/>
+
+
+
+</RelativeLayout>

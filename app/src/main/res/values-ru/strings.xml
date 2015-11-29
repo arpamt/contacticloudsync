@@ -1,0 +1,170 @@
+<!--
+  ~ Copyright (c) 2013 – 2015 Ricki Hirner (bitfire web engineering).
+  ~ All rights reserved. This program and the accompanying materials
+  ~ are made available under the terms of the GNU Public License v3.0
+  ~ which accompanies this distribution, and is available at
+  ~ http://www.gnu.org/licenses/gpl.html
+  ~ Modified by Danthe Theuma under the GNU v3 license.
+  --><resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="calendar_tasks_button">ICloud календарь и задачи</string>
+    <string name="davdroid_website">Синхронизация для веб-сайта ICloud</string>
+    <string name="title_activity_internet_browser">ICloud Интернет-браузер</string>
+    <string name="about_title">Около</string>
+    <string name="about_message"></string>
+    <string name="account_header_text">Управление контактами</string>
+    <string name="account_body_text">Управление ICloud счета для контактов.</string>
+    <string name="otherapps_header_text">Управление ICloud</string>
+    <string name="otherapps_body_text">Управление ICloud счета для календаря, задач и электронной почте.</string>
+    <string name="ads_header_text">Убрать рекламу</string>
+    <string name="ads_body_text">Убрать рекламу через In-App Purchase через Google PlayStore.</string>
+
+    <string name="icloud_tasks">Задачи ICloud</string>
+    <string name="HIDE_AD_BOOLEAN">HIDE_AD_BOOLEAN</string>
+    <string name="remove_ads">Убрать рекламу</string>
+    <string name="delete">Удалить</string>
+    <string name="remove_account">Удалить учетную запись</string>
+    <string name="remove_account_from_device">Удалить учетную запись из устройства.</string>
+    <string name="add_account">Добавить аккаунт</string>
+    <string name="edit_account">Редактировать аккаунт</string>
+    <string name="icloud_contacts">ICloud Календарь и задачи</string>
+    <string name="icloud_mail">ICloud Почта</string>
+    <string name="tap_it_fast">Нажмите это быстро!</string>
+    <string name="press_here_to_install">Нажмите здесь, чтобы установить</string>
+
+    <!-- common strings -->
+    <string name="app_name">Синхронизация для ICloud Контакты</string>
+    <string name="next">Следующий</string>
+    <string name="help">Помогите</string>
+    <string name="please_wait">пожалуйста, подождите</string>
+    <string name="send">послать</string>
+    <string name="skip">пропускать</string>
+
+    <!-- MainActivity -->
+    <string name="main_manage_accounts">Управление синхронизировать учетные записи</string>
+    <string name="main_show_debug_info">Показать отладочная информация</string>
+
+
+
+    <!-- AddAccountActivity -->
+    <string name="login_type_email">Вход с адресом электронной почты</string>
+    <string name="login_type_email_description">Детали услуга будет автоматически определен по доменному имени. Пример: myaccount@icloud.com</string>
+    <string name="login_type_url">Вход с URL и имя пользователя</string>
+    <string name="login_type_url_description">Детали услуга будет автоматически обнаружен начальной URL и имя пользователя. В основном используется для самостоятельного состоялась услуг.</string>
+    
+    <string name="login_email_description">Пожалуйста, введите Ваш адрес электронной почты. Его имя домена будет использоваться для автоматического обнаружения параметров службы.</string>
+    <string name="login_email_address">Эл. адрес</string>
+    
+    <string-array name="login_url_scheme">
+        <item>HTTP: //</item>
+        <item>HTTPS: //</item>
+    </string-array>
+    <string name="login_http_warning">Если вы не используете шифрование (HTTPS), другие люди могут легко перехватить ваши регистрационные данные, контакты и события.</string>
+    <string name="login_user_name">Имя пользователя:</string>
+    <string name="login_base_url">Базовый URL (сборники будут автоматически обнаружены):</string>
+    <string name="login_auth_preemptive">Преимущественное аутентификации (рекомендуется, но несовместимы с Дайджест авт)</string>
+
+    <string name="login_password">пароль</string>
+
+    <!-- Settings activity -->
+    <string name="settings_title">Настройки</string>
+    <string name="settings_no_accounts">Не найдено ни ICloud счета</string>
+    <string name="settings_authentication">Аутентификация</string>
+    <string name="settings_username">Имя пользователя</string>
+    <string name="settings_enter_username">Введите имя пользователя:</string>
+    <string name="settings_password">пароль</string>
+    <string name="settings_password_summary">Обновите пароль в соответствии с вашим сервером.</string>
+    <string name="settings_enter_password">Введите ваш пароль:</string>
+    <string name="settings_preemptive">Преимущественное аутентификации</string>
+    <string name="settings_preemptive_on">Полномочия передаются при каждом запросе (рекомендуется)</string>
+    <string name="settings_preemptive_off">Полномочия передаются после сервер запрашивает их</string>
+    <string name="settings_sync">Синхронизация</string>
+    <string name="settings_sync_interval_contacts">Интервал Синхронизация контактов</string>
+    <string name="settings_sync_summary_manually">Только вручную</string>
+    <string name="settings_sync_summary_periodically" tools:ignore="PluralsCandidate">%d мин + сразу на локальных изменений</string>
+    <string name="settings_sync_summary_not_available">Недоступен</string>
+    <string name="settings_sync_interval_calendars">Календарь синхронизации. интервал</string>
+    <string name="settings_sync_interval_tasks">Задачи синхронизации. интервал</string>
+    <string-array name="settings_sync_interval_seconds">
+        <item>-1</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>3600</item>
+        <item>7200</item>
+        <item>14400</item>
+        <item>86400</item>
+    </string-array>
+    <string-array name="settings_sync_interval_names">
+        <item>Только вручную</item>
+        <item>Каждые 5 минут</item>
+        <item>Каждые 10 минут</item>
+        <item>Каждые 15 минут</item>
+        <item>Каждый час</item>
+        <item>Каждые 2 часа</item>
+        <item>Каждые 4 часа</item>
+        <item>Один раз в день</item>
+    </string-array>
+    <string name="settings_debug">Отладка</string>
+    <string name="settings_security_warning">Потенциальный риск безопасности!</string>
+    <string name="settings_log_to_external_file">Войти на внешний файл</string>
+    <string name="settings_log_to_external_file_confirmation">Внешние файлы журнала будет содержать личные данные и быть доступными в других приложениях. Выключите внешний журнал и удалять файлы журналов после использования.</string>
+    <string name="settings_log_to_external_file_on">Журналы %s (если это возможно)</string>
+    <string name="settings_log_to_external_file_no_external_storage">Внешнее запоминающее устройство не доступно</string>
+    <string name="settings_log_to_external_file_off">Журналы записываются в АБР</string>
+    <string name="settings_log_verbose">Подробное ведение журнала</string>
+    <string name="settings_log_verbose_on">Войти информацию синхронизации и сетевой трафик</string>
+    <string name="settings_log_verbose_off">Войти только информации о синхронизации</string>
+
+    <string name="settings_android_update_title">Android-версия обновления</string>
+    <string name="settings_android_update_description">Android обновления версия может иметь влияние на то, как работает ICloud. Если есть проблемы, пожалуйста, удалите ваши учетные записи ICloud и добавить их снова.</string>
+    <string name="settings_version_update_title">Настройки были обновлены</string>
+    <string name="settings_version_update_description">Внутренние настройки были обновлены. Если есть проблемы, пожалуйста, удалите ICloud, а затем установить его снова.</string>
+
+    <string name="setup_resource_detection">Обнаружение ресурсов</string>
+    <string name="setup_no_collections_found">Не найдены адресные книги или календари. Это может произойти из-за неправильных учетных данных. \ nЕсли вы используете 2 аутентификацию, убедитесь, что используете приложение конкретный пароль.</string>
+    <string name="setup_view_logs">Показать журналы</string>
+    <string name="setup_add_account">Добавить аккаунт</string>
+    <string name="setup_querying_server">Запрос сервера. Пожалуйста, подождите…</string>
+    <string name="setup_what_to_sync">Какие коллекции должны быть синхронизированы?</string>
+    <string name="setup_address_books">Адресные книги</string>
+    <string name="setup_calendars">Календарь</string>
+    <string name="setup_task_lists">Списки задач</string>
+    <string name="setup_select_address_book">Выберите до одного адресной книге (нажмите еще раз, чтобы отменить) для синхронизации:</string>
+    <string name="setup_select_calendars">Выберите календари для синхронизации:</string>
+    <string name="setup_select_task_lists">Выберите списки задач для синхронизации:</string>
+    
+    <string name="setup_account_details">Счет</string>
+    <string name="setup_account_name">Имя учетной записи</string>
+    <string name="setup_account_name_hint">Мой аккаунт ICloud</string>
+    <string name="setup_email_address">ICloud адрес электронной почты</string>
+    <string name="setup_organizer_hint">Организатор ваших мероприятий не требуется, если вы используете участник информации.</string>
+    <string name="setup_account_name_info">\"Введите другое имя учетной записи для каждой учетной записи.</string>
+    <string name="setup_read_only">только для чтения</string>
+
+    <!-- sync errors and DebugInfoActivity -->
+    <string name="debug_info_title">Отладочная информация</string>
+    <string name="sync_error_calendar">Ошибка синхронизации календаря %s</string>
+    <string name="sync_error_contacts">Адрес ошибке книга синхронизации %s</string>
+    <string name="sync_error_tasks">Задача ошибка синхронизации %s</string>
+    <string name="sync_error">Отказ столкнулись в то время %s</string>
+    <string name="sync_error_http_dav">Отказ сервера, возникших в %s</string>
+    <string name="sync_error_local_storage">Отказ базы данных, возникших в %s</string>
+    <string-array name="sync_error_phases">
+        <item>подготовки ...</item>
+        <item>проверки границ ...</item>
+        <item>Обработка локально записей (удалить) ...</item>
+        <item>подготовке записи ...</item>
+        <item>Загрузка записей ...</item>
+        <item>проверка состояния ...</item>
+        <item>листинг форума записей ...</item>
+        <item>список онлайн записи ...</item>
+        <item>Сравнение записей ...</item>
+        <item>скачивания онлайн записи ...</item>
+        <item>сохранение состояние синхронизации ...</item>
+    </string-array>
+    <string name="sync_error_unauthorized">Логин или пароль неверны.</string>
+
+
+
+</resources>

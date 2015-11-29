@@ -1,0 +1,170 @@
+<!--
+  ~ Copyright (c) 2013 – 2015 Ricki Hirner (bitfire web engineering).
+  ~ All rights reserved. This program and the accompanying materials
+  ~ are made available under the terms of the GNU Public License v3.0
+  ~ which accompanies this distribution, and is available at
+  ~ http://www.gnu.org/licenses/gpl.html
+  ~ Modified by Danthe Theuma under the GNU v3 license.
+  --><resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="calendar_tasks_button">iCloud lịch và nhiệm vụ</string>
+    <string name="davdroid_website">Sync cho trang Web iCloud</string>
+    <string name="title_activity_internet_browser">iCloud Internet Browser</string>
+    <string name="about_title">Trong khoảng</string>
+    <string name="about_message"></string>
+    <string name="account_header_text">Quản lý danh bạ</string>
+    <string name="account_body_text">Quản lý tài khoản iCloud cho địa chỉ liên lạc.</string>
+    <string name="otherapps_header_text">Quản lý iCloud</string>
+    <string name="otherapps_body_text">Quản lý tài khoản iCloud cho lịch, công việc, và mail.</string>
+    <string name="ads_header_text">Loại bỏ các quảng cáo</string>
+    <string name="ads_body_text">Loại bỏ quảng cáo thông qua các ứng dụng mua hàng qua Google PlayStore.</string>
+
+    <string name="icloud_tasks">Nhiệm vụ iCloud</string>
+    <string name="HIDE_AD_BOOLEAN">HIDE_AD_BOOLEAN</string>
+    <string name="remove_ads">Loại bỏ các quảng cáo</string>
+    <string name="delete">Xóa bỏ</string>
+    <string name="remove_account">Xoá tài khoản</string>
+    <string name="remove_account_from_device">Di chuyển tài khoản từ thiết bị.</string>
+    <string name="add_account">Thêm tài khoản</string>
+    <string name="edit_account">Chỉnh sửa tài khoản</string>
+    <string name="icloud_contacts">Lịch iCloud và Nhiệm vụ</string>
+    <string name="icloud_mail">iCloud Thư</string>
+    <string name="tap_it_fast">Gõ vào nó nhanh!</string>
+    <string name="press_here_to_install">Bấm vào đây để cài đặt</string>
+
+    <!-- common strings -->
+    <string name="app_name">Sync cho iCloud Liên hệ</string>
+    <string name="next">Bên cạnh</string>
+    <string name="help">Cứu giúp</string>
+    <string name="please_wait">Xin vui lòng chờ đợi</string>
+    <string name="send">Gởi</string>
+    <string name="skip">Bỏ qua</string>
+
+    <!-- MainActivity -->
+    <string name="main_manage_accounts">Quản lý tài khoản đồng bộ</string>
+    <string name="main_show_debug_info">Hiển thị thông tin gỡ lỗi</string>
+
+
+
+    <!-- AddAccountActivity -->
+    <string name="login_type_email">Đăng nhập với địa chỉ email</string>
+    <string name="login_type_email_description">Chi tiết dịch vụ sẽ tự động phát hiện bởi tên miền. Ví dụ: myaccount@icloud.com</string>
+    <string name="login_type_url">Đăng nhập với URL và tên người dùng</string>
+    <string name="login_type_url_description">Chi tiết dịch vụ sẽ tự động phát hiện bởi URL ban đầu và tên người dùng. Chủ yếu được sử dụng cho các dịch vụ tự lưu trữ.</string>
+    
+    <string name="login_email_description">Hãy điền địa chỉ email của bạn. Tên miền của nó sẽ được sử dụng để tự động phát hiện các thiết lập dịch vụ.</string>
+    <string name="login_email_address">E-mail</string>
+    
+    <string-array name="login_url_scheme">
+        <item>http: //</item>
+        <item>https: //</item>
+    </string-array>
+    <string name="login_http_warning">Nếu bạn không sử dụng mã hóa (HTTPS), những người khác có thể dễ dàng đánh chặn thông tin đăng nhập, địa chỉ liên lạc và các sự kiện của bạn.</string>
+    <string name="login_user_name">Tên người dùng:</string>
+    <string name="login_base_url">URL Base (bộ sưu tập sẽ được tự động phát hiện):</string>
+    <string name="login_auth_preemptive">Xác thực Preemptive (đề nghị, nhưng không tương thích với Digest auth)</string>
+
+    <string name="login_password">Mật khẩu</string>
+
+    <!-- Settings activity -->
+    <string name="settings_title">Cài đặt</string>
+    <string name="settings_no_accounts">Không tìm thấy tài khoản iCloud</string>
+    <string name="settings_authentication">Chứng thực</string>
+    <string name="settings_username">Tên người dùng</string>
+    <string name="settings_enter_username">Nhập tên người dùng:</string>
+    <string name="settings_password">Mật khẩu</string>
+    <string name="settings_password_summary">Cập nhật mật khẩu theo máy chủ của bạn.</string>
+    <string name="settings_enter_password">Nhập mật khẩu của bạn:</string>
+    <string name="settings_preemptive">Xác thực Pre-emptive</string>
+    <string name="settings_preemptive_on">Thông tin được gửi với mọi yêu cầu (đề nghị)</string>
+    <string name="settings_preemptive_off">Thông tin được gửi sau khi máy chủ yêu cầu họ</string>
+    <string name="settings_sync">Đồng bộ hóa</string>
+    <string name="settings_sync_interval_contacts">Khoảng thời gian đồng bộ hóa địa chỉ liên lạc</string>
+    <string name="settings_sync_summary_manually">Chỉ tay</string>
+    <string name="settings_sync_summary_periodically" tools:ignore="PluralsCandidate">%d phút + ngay lập tức về sự thay đổi của địa phương</string>
+    <string name="settings_sync_summary_not_available">Không thể</string>
+    <string name="settings_sync_interval_calendars">Lịch đồng bộ. khoảng thời gian</string>
+    <string name="settings_sync_interval_tasks">Nhiệm vụ đồng bộ. khoảng thời gian</string>
+    <string-array name="settings_sync_interval_seconds">
+        <item>-1</item>
+        <item>300</item>
+        <item>600</item>
+        <item>900</item>
+        <item>3600</item>
+        <item>7200</item>
+        <item>14400</item>
+        <item>86400</item>
+    </string-array>
+    <string-array name="settings_sync_interval_names">
+        <item>Chỉ tay</item>
+        <item>Cứ mỗi 5 phút</item>
+        <item>Mỗi 10 phút</item>
+        <item>Mỗi 15 phút</item>
+        <item>Mọi giờ</item>
+        <item>Mỗi 2 giờ</item>
+        <item>Mỗi 4 giờ</item>
+        <item>Một lần một ngày</item>
+    </string-array>
+    <string name="settings_debug">Debugging</string>
+    <string name="settings_security_warning">Nguy cơ bảo mật tiềm năng!</string>
+    <string name="settings_log_to_external_file">Đăng nhập vào tập tin bên ngoài</string>
+    <string name="settings_log_to_external_file_confirmation">File log bên ngoài sẽ chứa dữ liệu cá nhân và có thể truy cập bởi các ứng dụng khác. Tắt khai thác gỗ bên ngoài và xóa các tập tin log sau khi sử dụng.</string>
+    <string name="settings_log_to_external_file_on">Bản ghi được ghi %s (nếu có thể)</string>
+    <string name="settings_log_to_external_file_no_external_storage">Lưu trữ bên ngoài không có sẵn</string>
+    <string name="settings_log_to_external_file_off">Nhật ký được viết để ADB</string>
+    <string name="settings_log_verbose">Tiết đăng nhập</string>
+    <string name="settings_log_verbose_on">Đăng nhập thông tin đồng bộ hóa và lưu lượng mạng</string>
+    <string name="settings_log_verbose_off">Đăng nhập chỉ thông tin đồng bộ hóa</string>
+
+    <string name="settings_android_update_title">Android cập nhật phiên bản</string>
+    <string name="settings_android_update_description">Cập nhật phiên bản Android có thể có một tác động vào iCloud hoạt động. Nếu có vấn đề, xin vui lòng xóa các tài khoản iCloud của bạn và thêm chúng một lần nữa.</string>
+    <string name="settings_version_update_title">Cài đặt đã được cập nhật</string>
+    <string name="settings_version_update_description">Cài đặt bên trong đã được cập nhật. Nếu có vấn đề, xin vui lòng gỡ bỏ cài đặt iCloud và sau đó cài đặt lại nó.</string>
+
+    <string name="setup_resource_detection">Phát hiện tài nguyên</string>
+    <string name="setup_no_collections_found">Không có địa chỉ hoặc cuốn sách lịch đã được tìm thấy. Điều này có thể xảy ra bởi vì các thông tin không chính xác. \ nNếu bạn đang sử dụng 2 yếu tố xác thực, đảm bảo sử dụng một mật khẩu cụ thể ứng dụng.</string>
+    <string name="setup_view_logs">Xem nhật ký</string>
+    <string name="setup_add_account">Thêm tài khoản</string>
+    <string name="setup_querying_server">Truy vấn các máy chủ. Xin vui lòng chờ đợi…</string>
+    <string name="setup_what_to_sync">Những bộ sưu tập sẽ được đồng bộ?</string>
+    <string name="setup_address_books">Sổ địa chỉ</string>
+    <string name="setup_calendars">Lịch</string>
+    <string name="setup_task_lists">Danh sách công việc</string>
+    <string name="setup_select_address_book">Chọn đến một sổ địa chỉ (tap một lần nữa để bỏ chọn) để đồng bộ hóa:</string>
+    <string name="setup_select_calendars">Chọn lịch để đồng bộ hóa:</string>
+    <string name="setup_select_task_lists">Chọn danh sách nhiệm vụ cho đồng bộ:</string>
+    
+    <string name="setup_account_details">Tài khoản</string>
+    <string name="setup_account_name">Tên tài khoản</string>
+    <string name="setup_account_name_hint">Tài khoản iCloud của tôi</string>
+    <string name="setup_email_address">địa chỉ email iCloud</string>
+    <string name="setup_organizer_hint">Lịch tổ chức các sự kiện của bạn là cần thiết nếu bạn sử dụng thông tin quan trọng.</string>
+    <string name="setup_account_name_info">\"Nhập tên tài khoản khác nhau cho mỗi tài khoản.</string>
+    <string name="setup_read_only">chỉ đọc</string>
+
+    <!-- sync errors and DebugInfoActivity -->
+    <string name="debug_info_title">Thông tin gỡ lỗi</string>
+    <string name="sync_error_calendar">Lịch lỗi đồng bộ hóa %s</string>
+    <string name="sync_error_contacts">Địa chỉ đồng bộ cuốn sách lỗi %s</string>
+    <string name="sync_error_tasks">Nhiệm vụ lỗi đồng bộ hóa %s</string>
+    <string name="sync_error">Không gặp phải trong %s</string>
+    <string name="sync_error_http_dav">Máy chủ thất bại gặp phải trong %s</string>
+    <string name="sync_error_local_storage">Cơ sở dữ liệu thất bại gặp phải trong %s</string>
+    <string-array name="sync_error_phases">
+        <item>chuẩn bị ...</item>
+        <item>kiểm tra ranh giới ...</item>
+        <item>xử lý cục bộ các entry (xóa) ...</item>
+        <item>chuẩn bị mục ...</item>
+        <item>mục tải lên ...</item>
+        <item>kiểm tra nhà nước ...</item>
+        <item>danh sách các mục ẩn ...</item>
+        <item>danh sách các mục trực tuyến ...</item>
+        <item>so sánh mục ...</item>
+        <item>tải mục trực tuyến ...</item>
+        <item>tiết kiệm nhà nước đồng bộ ...</item>
+    </string-array>
+    <string name="sync_error_unauthorized">Tên đăng nhập hoặc tài khoản của bạn không chính xác.</string>
+
+
+
+</resources>
